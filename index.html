@@ -22,36 +22,16 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+<script src="${SSL_EBSERVER}/static/widgets/eb_widgets.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="./fabulousunited_files/js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-15238277-18');
+<script type="text/javascript">
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '45564740365',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-45564740365'
+    });
 </script>
-
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '214203179168830'); 
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" 
-src="https://www.facebook.com/tr?id=214203179168830&ev=PageView
-&noscript=1"/>
-</noscript>
-<!-- End Facebook Pixel Code -->
 
 
      <link rel="stylesheet" href="./fabulousunited_files/animate.css">
@@ -95,16 +75,6 @@ src="https://www.facebook.com/tr?id=214203179168830&ev=PageView
       </div>
     </header>
 
-    <!--<section id="bg-prim" class="">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-md-8 col-sm-12 text-center center-col">
-                    
-                    </div>
-                </div>    
-            </div>
-    </section>-->
-
     <section id="bg-sec" class="">
             <div class="container">
                 <div class="row">
@@ -134,7 +104,7 @@ src="https://www.facebook.com/tr?id=214203179168830&ev=PageView
 </tr>
 </tbody>
 </table>
-<p><a class="btn btn-outline btn-xl js-scroll-trigger" href="https://www.fabulousunited.nl/tickets">Koop je ticket hier</a></p>                    </div>
+<p><a id="eventbrite-widget-modal-trigger-45564740365" class="btn btn-outline btn-xl js-scroll-trigger" href="javascript:void(0)">Koop je ticket hier</a></p>                    </div>
                 </div>    
             </div>
     </section>
