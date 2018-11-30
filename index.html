@@ -33,17 +33,7 @@
         modal: true,
         modalTriggerElementId: 'eventbrite-widget-modal-trigger-45564740365'
     });
-
-    var userAgent = window.navigator.userAgent.toLowerCase();
-    var ios = /iphone|ipod|ipad/.test( userAgent );
-
-    var ua = window.navigator.userAgent || navigator.vendor || window.opera;
-
-    if (ios && /FBIOS/.test(ua)) {
-        window.alert('this is a FB browser! ');
-    }
-
-    window.alert('TEST');
+    //window.alert('TEST');
 </script>
 
 
@@ -56,7 +46,9 @@
         <link rel="stylesheet" href="./fabulousunited_files/responsive.css">
     <link rel="stylesheet" type="text/css" href="./fabulousunited_files/stylesheet_combined_4d0de4cbb50c126e74322fd6211edd4a.css">
 
-</head><body id="page-top" class="info" style="zoom: 1;">
+</head>
+
+<body id="page-top" class="info" style="zoom: 1;">
 
      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 <div class="container">            
@@ -83,6 +75,7 @@
         <div class="row">
             <div class="col-lg-10 my-auto center-col z-index-3">
                     <img src="./fabulousunited_files/fabulous-united-logo.png" class="img-fluid logo" alt="">
+            <h1 class="js-fb" >THIS IS FB BROWSER.</h1>
           </div>
         </div>
       </div>
@@ -168,6 +161,15 @@
 				horizontalScrolling: false,
 				verticalOffset: 40
 			});
+
+            var userAgent = window.navigator.userAgent.toLowerCase();
+            var ios = /iphone|ipod|ipad/.test( userAgent );
+
+            var ua = window.navigator.userAgent || navigator.vendor || window.opera;
+
+            if (ios && /FBIOS/.test(ua)) {
+                $('.js-fb').show();
+            }
 		});
 		</script>
 
