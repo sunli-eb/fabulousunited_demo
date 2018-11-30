@@ -33,6 +33,15 @@
         modal: true,
         modalTriggerElementId: 'eventbrite-widget-modal-trigger-45564740365'
     });
+
+    var userAgent = window.navigator.userAgent.toLowerCase();
+    var ios = /iphone|ipod|ipad/.test( userAgent );
+
+    var ua = window.navigator.userAgent || navigator.vendor || window.opera;
+
+    if (ios && /FBIOS/.test(ua)) {
+        window.alert('this is a FB browser! ');
+    }
 </script>
 
 
